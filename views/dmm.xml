@@ -1,0 +1,66 @@
+<odoo>
+  <template id="t4_web.dmm">
+  <xpath expr="//header[@id='top']" position="replace">
+      <body class="u-body u-xl-mode" data-lang="en">
+        <t t-call="t4_web.header"/>
+        <div style="height:60vh;text-align:center">
+          <h1 style="">Welcome</h1>
+          <img src="/t4_web/static/src/images/hi.gif" alt="" class=""/>
+        </div>
+        <t t-call="t4_web.footer"/>
+      </body>
+  </xpath> 
+  </template>
+
+  <template id="cus_header" name="cus_header" inherit_id="web.frontend_layout">
+      <xpath expr="//header[@id='top']" position="replace">
+      <body style="*overflow-y: hidden;" class="u-body u-xl-mode" data-lang="en">
+        <t t-set="is_connected" t-value="not user_id._is_public()"/>
+        <t t-if="is_connected">
+          <t t-call="t4_web.header_after_login"/>
+        </t>
+        <t t-else="">
+          <t t-call="t4_web.header"/>
+        </t>
+        </body>
+      </xpath>
+
+      <xpath expr="//footer[@id='bottom']" position="replace">
+        <t t-call="t4_web.footer"/>
+      </xpath>
+  </template> 
+
+  <template id="t4_web_home" inherit_id="web.login">
+    <xpath expr="//t[@t-call='web.login_layout']" position="before">
+      <t t-call-assets="t4_web.css_input"/>
+    </xpath>
+  </template>
+
+  <template id="t4_web_body" inherit_id="web.layout">
+    <xpath expr="//head" position="inside">
+      <t t-call-assets="t4_web.css_scroll"/>
+    </xpath>
+  </template>
+
+  <template id="t4_web_home" inherit_id="portal.portal_my_home">
+    <xpath expr="//div[@class='o_portal_my_home']" position="replace">
+      <div class="container" style="padding-top:50px">
+        <div style="text-align:center">
+          <h1 style="">Welcome 
+            <t t-esc="request.env.user.name" />
+          </h1>
+        </div>
+      </div>
+    </xpath>
+  </template>
+
+  <template id="t4_web_padding" inherit_id="portal.portal_layout">
+    <xpath expr="//div[@id='wrap']" position="inside">
+        <t t-call-assets="t4_web.padding"/>
+    </xpath>
+
+  </template>
+
+
+
+</odoo>

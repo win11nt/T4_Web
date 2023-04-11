@@ -1,0 +1,137 @@
+<odoo>
+    <template id="t4_web.header_after_login" name="header 2">
+        <html style="font-size: 16px;" lang="en">
+            <head>
+                <t t-call-assets="t4_web.header_after_login"/>
+                <title>Setting</title>
+                <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/t4tek_square.webp",
+		"sameAs": []
+}</script>
+            </head>
+            <body class="u-body u-xl-mode" data-lang="en">
+                <header class="u-border-1 u-border-grey-10 u-clearfix u-header u-sticky u-sticky-ebd7 u-white" id="sec-668c">
+                    <div class="u-clearfix u-sheet u-sheet-1">
+                        <a href="/Home.html" class="u-align-center-md u-align-center-sm u-align-center-xs u-image u-logo u-image-1" data-image-width="320" data-image-height="320" title="Home">
+                            <img src="/t4_web/static/src/images/t4tek_square.webp" class="u-logo-image u-logo-image-1"/>
+                        </a>
+                        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="MD" data-submenu-level="on-click">
+                            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                                <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-file-icon u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-file-icon-1" href="#">
+                                    <img src="/t4_web/static/src/images/1144760.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="u-custom-menu u-nav-container">
+                                <ul class="u-nav u-unstyled u-nav-1">
+                                    <li class="u-nav-item">
+                                    
+                                        <a class="u-active-white u-button-style u-hover-white u-nav-link u-text-active-black u-text-hover-black u-white" style="padding: 30px 27px 30px 26px;">
+                                        <t t-esc="request.env.user.name" />
+
+                                        </a>
+                                        <div class="u-nav-popup">
+                                            <ul class="u-border-1 u-border-grey-60 u-h-spacing-17 u-nav u-unstyled u-v-spacing-19">
+                                                <li class="u-nav-item">
+                                                    <a class="u-active-white u-button-style u-hover-white u-nav-link u-white" href="/my/security">Setting</a>
+                                                </li>
+                                                <li class="u-nav-item">
+                                                    <a class="u-active-white u-button-style u-hover-white u-nav-link u-white" href="/Setting.html">Help</a>
+                                                </li>
+                                                <li class="u-nav-item">
+                                                    <a class="u-active-white u-button-style u-hover-white u-nav-link u-white" href="Privacy.html">Privacy</a>
+                                                </li>
+                                                <li class="u-nav-item">
+                                                    <a class="u-active-white u-button-style u-hover-white u-nav-link u-white" href="/web/session/logout" >Log Out</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="u-custom-menu u-nav-container-collapse">
+                                <div class="u-black u-container-style u-inner-container-layout u-sidenav u-sidenav-1" data-offcanvas-width="165.6875">
+                                    <div class="u-inner-container-layout u-sidenav-overflow">
+                                        <div class="u-menu-close"></div>
+                                        <ul class="u-align-left u-nav u-popupmenu-items u-spacing-0 u-unstyled u-nav-3">
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link">User</a>
+                                                <div class="u-nav-popup">
+                                                    <ul class="u-border-1 u-border-grey-60 u-h-spacing-17 u-nav u-unstyled u-v-spacing-19">
+                                                        <li class="u-nav-item">
+                                                            <a class="u-button-style u-nav-link" href="/Setting.html">Setting</a>
+                                                        </li>
+                                                        <li class="u-nav-item">
+                                                            <a class="u-button-style u-nav-link" href="/Setting.html">Help</a>
+                                                        </li>
+                                                        <li class="u-nav-item">
+                                                            <a class="u-button-style u-nav-link" href="Privacy.html">Privacy</a>
+                                                        </li>
+                                                        <li class="u-nav-item">
+                                                            <a class="u-button-style u-nav-link">Log Out</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="u-menu-overlay"></div>
+                            </div>
+                        </nav>
+                        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-2" data-responsive-from="MD" data-submenu-level="on-click">
+                            <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                                <a class="u-button-style u-custom-active-color u-custom-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-file-icon u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-file-icon-2" href="#">
+                                    <img src="/t4_web/static/src/images/545705.png" alt=""/>
+                                </a>
+                            </div>
+                            <div class="u-custom-menu u-nav-container">
+                                <ul class="u-nav u-unstyled u-nav-5">
+                                    <li class="u-nav-item">
+                                        <a class="u-button-style u-nav-link u-text-active-black u-text-hover-black" href="/my" style="padding: 30px 27px 30px 28px;">Home</a>
+                                    </li>
+                                    <li class="u-nav-item">
+                                        <a class="u-button-style u-nav-link u-text-active-black u-text-hover-black" href="Saved-Contact.html" style="padding: 30px 27px 30px 28px;">My Contacts</a>
+                                    </li>
+                                    <li class="u-nav-item">
+                                        <a class="u-button-style u-nav-link u-text-active-black u-text-hover-black" href="/Edit-avatar-logo-background.html" style="padding: 30px 27px 30px 28px;">Customize Name Card</a>
+                                    </li>
+                                    <li class="u-nav-item">
+                                        <a class="u-button-style u-nav-link u-text-active-black u-text-hover-black" href="asd" style="padding: 30px 27px 30px 28px;">Branding Page</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="u-custom-menu u-nav-container-collapse">
+                                <div class="u-black u-container-style u-inner-container-layout u-sidenav u-sidenav-2" data-offcanvas-width="198">
+                                    <div class="u-inner-container-layout u-sidenav-overflow">
+                                        <div class="u-menu-close"></div>
+                                        <ul class="u-align-justify-sm u-align-justify-xs u-align-left-lg u-align-left-md u-align-left-xl u-nav u-popupmenu-items u-spacing-0 u-unstyled u-nav-6">
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="/my" style="padding-top: 12px; padding-bottom: 12px;">Home</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="Saved-Contact.html" style="padding-top: 12px; padding-bottom: 12px;">My Contacts</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="/Edit-avatar-logo-background.html" style="padding-top: 12px; padding-bottom: 12px;">Customize Name Card</a>
+                                            </li>
+                                            <li class="u-nav-item">
+                                                <a class="u-button-style u-nav-link" href="asd" style="padding-top: 12px; padding-bottom: 12px;">Branding Page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="u-menu-overlay"></div>
+                            </div>
+                        </nav>
+                    </div>
+                    <style class="u-sticky-style" data-style-id="ebd7">.u-sticky-fixed.u-sticky-ebd7:before, .u-body.u-sticky-fixed .u-sticky-ebd7:before {
+borders: top right bottom left !important
+}</style>
+                </header>
+            </body>
+        </html>
+    </template>
+</odoo>
